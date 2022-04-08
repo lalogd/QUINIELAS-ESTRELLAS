@@ -1,0 +1,216 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
+body {
+    max-width: 400px;
+    margin: auto;
+    background: radial-gradient(circle, rgb(2, 28, 80) 0%, rgb(4, 26, 112) 52%, rgb(2, 73, 6) 100%);
+}
+.quiniela {
+    margin: auto;
+    background-image: url("../img/jornada13.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 400px;
+    border-radius: 15px;
+}
+.botones {
+    margin-top: 10px;
+    width: 100%;
+}
+@media (max-width: 400px){
+    .botones {
+        margin-top: 5px;
+    }
+}
+.aux {
+    width: 100%;
+    height: 13.3%;
+    padding-top: 2.5%;
+}
+.quiniela span {
+    margin: 1px;
+    width: 10.6%;
+    display: inline-flex;
+    -webkit-transition:background-color 0.3s ease;
+    -moz-transition:background-color 0.3s ease;
+    -o-transition:background-color 0.3s ease;
+    transition:background-color 0.3s ease;  
+}
+#_ {
+    width: 34.1%;
+    height: 100%;
+    display: inline-flex;
+}
+.partido {
+    display: flex;
+    height: 6.67%;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    padding: 19px;
+    color: #f8f4f4;
+    margin-top: 8%;
+    border-radius: 0 0 10px 10px;
+    background: rgb(240, 243, 240);
+    background: radial-gradient(circle, rgba(21, 6, 155, 0.973) 0%, rgb(8, 8, 97) 52%, rgb(8, 13, 80) 100%);
+    font-size: x-large;
+}
+h2, h3 {
+    text-align: center;
+    box-shadow: 2px 2px 2px #fdfcfc;
+    border-radius: 10px;
+}
+.botonenviar {
+    background: #1cc26f; 
+    color: #131212  ;   
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top:8px;
+    height: 64px;
+    border: 1px solid #0c0c0c;
+}
+.botonenviar span {
+    font-size: 13px;
+}
+.imgref {
+    width: 25px;
+    height: 25px;
+}
+#botonlisto {
+    background: #dbdb0a; 
+    color: #111111;
+    font-size: 10px;
+    padding: 10px;
+    height: 64px;
+    border: 1px solid #000000;
+}
+#botonborrar {
+    background: #eb0404;
+    color: #1a1919;
+    font-size: 10px;
+    padding: 10px;
+    height: 64px;
+    border: 1px solid #0f0f0f;
+}
+#nombrebox {
+    background: #061069;
+    border-radius: 10px;
+    height: 64px;
+    text-align: center;
+    border: 1px solid #f2f3f8;
+    box-shadow: 2px 2px 2px #0a0a0a;
+}
+#nombretext {
+    color: #fcf6f6;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}
+#nombre {
+    background: #fafafd;
+    display: inline-block;
+    width: 95%;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    text-align: center;
+    height: 20px;
+}
+.cuadronombre {
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-bottom: 5px;
+}
+#random {
+    background: #f1f3f3;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-size: 13px;
+    height: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 7px;
+}
+p {
+    padding: 10px;
+}
+#display {
+    border: 1px solid #f7fcf7;
+    width: 100%;
+    background-color: #137720;
+    border-radius: 0px 0px 5px 5px;
+    text-align: left;
+    padding: 5x 0px;
+    margin-bottom: 10px;
+    table-layout: fixed;
+    box-shadow: 2px 2px 2px #f8f8f8;  
+}
+#display td {
+    border-right: 1px solid #0a0a0a;
+    text-align: center;
+    overflow-x: hidden;
+}
+h4 {
+    float: left;
+    display: contents;
+    text-align: center;
+}
+h6 {
+    display: inline;
+}
+#total {
+    display: inline-block;
+    float: right;
+    margin-top: 7px;
+    padding: 0 2px;
+}
+#costo, #numquinielas {
+    color: #160a85;
+    display: inline;
+    padding: 0 2px;
+}
+.titulo-quinielas {
+    color: #c9eb0e;    
+    text-align: center;
+    background: #0c1592f5;
+    box-shadow: 2px 2px 2px #fdf9f9;
+    border-radius: 5px 5px 0px 0px;
+    border-left: 1px solid #f1eded;
+    border-right: 1px solid #fdf9f9;
+    border-top: 1px solid #f7f0f0;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.suma {
+    background: #16910bf1;
+    color: #0c136e;
+    border-radius: 5px;
+    box-right-shadow: 2px #f7eeee;
+    height: 45px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(241, 241, 241);
+}
+.instrucciones {
+    margin-top: 5px;
+    width: 100%;
+}
+.reglas {
+    background: #e4e70b;
+    border-radius: 10px;
+    border: 1px solid rgb(12, 12, 12);
+    font-size: 11px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 2px #f5f3f3;
+}
+.nombre-div {
+    border: 1px;
+}

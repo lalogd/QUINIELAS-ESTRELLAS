@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="description" content="¡Registra aquí tus quinielas!">
+        <meta name="keywords" content="Quiniela, Liga MX, Apostar, Pronósticos">
+        <title>Quinielas Estrellas</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="apple-touch-icon" href="img/logo.favicon">
+        <link rel="shortcut icon" href="img/logo.favicon" type="image/x-icon">
+        <script src="js/script.js"></script>
+    </head>
+    <body><br>
+        <p id="bolsa">
+       
+            <br>
+            <span style="color: rgb(218, 221, 18);">1 QUINIELA X $20, 3 X $50, 10 X $150, 25 X $300</span>
+            
+            <span style="color: rgb(209, 209, 9);"></span>
+            
+     
+        </p>
+        <div class="quiniela" id="quiniela">
+            <div class="aux"></div>
+            <div class="partido">
+                <span id="L1" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E1" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V1" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L2" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E2" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V2" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L3" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E3" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V3" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L4" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E4" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V4" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L5" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E5" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V5" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L6" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E6" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V6" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L7" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E7" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V7" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L8" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E8" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V8" onclick="selection(this)"></span>
+            </div>
+            <div class="partido">
+                <span id="L9" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="E9" onclick="selection(this)"></span>
+                <div id="_"></div>
+                <span id="V9" onclick="selection(this)"></span>
+            </div>
+            <h1 id="text"></h1>
+        </div>
+        <table class="instrucciones">
+            <tbody>
+                <tr>
+                    <td class="reglas" width="230px">
+                        <b>Instrucciones</b><br>
+                            1. Agrega tu nombre.<br>
+                            2. Selecciona tu quiniela manualmente o al azar.<br>
+                            3. Presiona "Agregar Quiniela".<br>
+                            4. Clic en "Enviar Quiniela(s)."<br>
+                    </td>
+                    <td width="130px">
+                        <table id="nombrebox">
+                            <tbody>
+                                <tr style="height: 15px">
+                                    <td id="nombretext">Nombre:</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="nombre" type="text" class="nombre-div" placeholder="" maxlength="20" spellcheck="false"></td>
+                                    <td onclick="clearname()"><img src="img/borrar.png" width="24px" height="24px"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="botones">
+            <tbody>
+                <tr>
+                    <td width="40px"><h2 id="botonlisto" onclick="save()"><img class="imgref" src="img/add.png"><br>Agregar Quiniela</h2></td>
+                    <td width="120px"><h2 id="random" onclick="random()"><img src="img/rd.png"><br>Al azar</h2></td>
+                    <td width="40px"><h2 id="botonborrar" onclick="deleteall()"><img class="imgref" src="img/del.png"><br>Borrar Todo</h2></td>
+                    <td><h2 class="botonenviar" onclick="send()"> <img class="imgref" src="img/wa.png"><br>Enviar <span>0</span> Quiniela(s)</h2></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="suma">
+            <h4 id="costo">Costo: $0</h4><h4 id="total">Total: $0</h4><br>
+            <h4 id="numquinielas">0 Quiniela(s)</h4>
+        </div>
+        <div class="titulo-quinielas">Lista De Quinielas</div>
+        <table id="display"></table>
+    </body>
+</html>
