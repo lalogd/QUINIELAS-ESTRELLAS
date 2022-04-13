@@ -1,0 +1,21 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
+body {
+    max-width: 400px;
+    margin: auto;
+    background: radial-gradient(circle, rgb(12, 12, 12) 0%, rgb(12, 12, 12) 52%, rgb(18, 19, 18) 100%);
+}
+
+footer a{
+    background-color: blue;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
