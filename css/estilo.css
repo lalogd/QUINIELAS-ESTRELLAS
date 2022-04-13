@@ -215,8 +215,8 @@ h6 {
     border: 1px;
 }
 header a{
-    background:  linear-gradient(0,  rgb(5, 61, 243) 20%, rgb(22, 6, 247) 90%);
-    color: rgb(241, 248, 242);
+    background:  linear-gradient(0,  rgb(9, 114, 23) 20%, rgb(247, 231, 6) 90%);
+    color: rgb(4, 61, 165);
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
